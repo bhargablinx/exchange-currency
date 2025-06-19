@@ -40,7 +40,8 @@ function App() {
                     onClick={convert}
                     className="flex-1 bg-blue-600 mx-4 mb-4 rounded-xl text-white font-bold cursor-pointer hover:bg-blue-700 duration-100"
                 >
-                    Convert
+                    Convert {fromCurrency.toUpperCase()} to{" "}
+                    {toCurrency.toUpperCase()}
                 </button>
             </div>
         </div>
