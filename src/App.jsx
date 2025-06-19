@@ -26,6 +26,7 @@ function App() {
                     currencyOptions={options}
                     selectedCurrency={fromCurrency}
                     setCurrency={setFromCurrency}
+                    isDisabled={false}
                 />
                 <InputBox
                     amountType="To"
@@ -33,6 +34,7 @@ function App() {
                     currencyOptions={options}
                     selectedCurrency={toCurrency}
                     setCurrency={setToCurrency}
+                    isDisabled={true}
                 />
                 <button
                     onClick={convert}

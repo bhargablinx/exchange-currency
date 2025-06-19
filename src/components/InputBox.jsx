@@ -7,6 +7,7 @@ export const InputBox = ({
     currencyOptions,
     selectedCurrency,
     setCurrency,
+    isDisabled,
 }) => {
     return (
         <div className="bg-slate-100 shadow-md flex justify-between gap-4 m-4 p-6 rounded-2xl">
@@ -15,6 +16,7 @@ export const InputBox = ({
                     {amountType}
                 </label>
                 <input
+                    readOnly={isDisabled}
                     type="number"
                     placeholder="0"
                     value={amount === 0 ? "" : amount}
