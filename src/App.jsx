@@ -1,8 +1,8 @@
 function App() {
     return (
-        <>
-            <h1 className="text-3xl font-bold underline"> Hello world! </h1>
-        </>
+        <div className="h-screen bg-slate-900 flex justify-center items-center">
+            <div className="bg-slate-200 w-[450px] h-[400px] rounded-2xl shadow-2xl shadow-cyan-500/50"></div>
+        </div>
     );
 }
 
