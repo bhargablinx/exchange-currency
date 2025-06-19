@@ -19,11 +19,15 @@ function App() {
                     amount={fromAmount}
                     setAmount={setFromAmount}
                     currencyOptions={options}
+                    selectedCurrency={fromCurrency}
+                    setCurrency={setFromCurrency}
                 />
                 <InputBox
                     amountType="To"
                     amount={toAmount}
                     currencyOptions={options}
+                    selectedCurrency={toCurrency}
+                    setCurrency={setToCurrency}
                 />
                 <button className="flex-1 bg-blue-600 mx-4 mb-4 rounded-xl text-white font-bold cursor-pointer hover:bg-blue-700 duration-100">
                     Convert
