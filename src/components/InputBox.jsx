@@ -5,6 +5,7 @@ export const InputBox = ({
     amount,
     setAmount,
     defaultCurrency,
+    currencyOptions,
 }) => {
     return (
         <div className="bg-slate-100 shadow-md flex justify-between gap-4 m-4 p-6 rounded-2xl">
@@ -25,13 +26,12 @@ export const InputBox = ({
                 <label className="text-slate-700 text-sm font-medium">
                     Currency Type
                 </label>
-                <select
-                    value={defaultCurrency}
-                    className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 bg-white text-slate-800"
-                >
-                    <option>USD</option>
-                    <option>INR</option>
-                    <option>CAD</option>
+                <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 bg-white text-slate-800">
+                    {currencyOptions.map((currency) => (
+                        <option key={currency} value={currency}>
+                            {currency.toUpperCase()}
+                        </option>
+                    ))}
                 </select>
             </div>
         </div>
