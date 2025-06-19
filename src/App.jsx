@@ -11,6 +11,11 @@ function App() {
     const currencyInfo = useCurrency(fromCurrency);
     const options = Object.keys(currencyInfo);
 
+    const convert = () => {
+        const result = (fromAmount * currencyInfo[toCurrency]).toFixed(2);
+        setToAmount(result);
+    };
+
     return (
         <div className="h-screen bg-slate-900 flex justify-center items-center">
             <div className="bg-slate-500 w-[450px] h-[350px] rounded-2xl shadow-2xl shadow-cyan-500/50 flex flex-col">
@@ -29,7 +34,10 @@ function App() {
                     selectedCurrency={toCurrency}
                     setCurrency={setToCurrency}
                 />
-                <button className="flex-1 bg-blue-600 mx-4 mb-4 rounded-xl text-white font-bold cursor-pointer hover:bg-blue-700 duration-100">
+                <button
+                    onClick={convert}
+                    className="flex-1 bg-blue-600 mx-4 mb-4 rounded-xl text-white font-bold cursor-pointer hover:bg-blue-700 duration-100"
+                >
                     Convert
                 </button>
             </div>
