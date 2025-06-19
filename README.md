@@ -1,12 +1,48 @@
-# React + Vite
+# 💱 Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Currency Converter** web application built using **React**, **Vite**, and **Tailwind CSS**. This app fetches real-time exchange rates from an external API and allows users to convert between different currencies with ease.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   🌐 **Live Currency Rates** — Fetches up-to-date exchange rates from an external API.
+-   🔄 **Bidirectional Conversion** — Convert from any currency to another instantly.
+-   🌍 **All Major Currencies Supported** — Supports a wide range of international currencies.
+-   ⚡ **Fast Performance** — Powered by Vite for blazing-fast development and build.
+-   🎨 **Responsive Design** — Built with Tailwind CSS for a clean and adaptable UI across devices.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **React** – Frontend library for building the UI
+-   **Vite** – Build tool for rapid development
+-   **Tailwind CSS** – Utility-first CSS framework for styling
+-   **Currency API** – External API to fetch real-time exchange rates
+
+## 📸 Screenshots
+
+![](./preview.png)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   Node.js and npm installed
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/currency-converter.git
+cd currency-converter
+npm install
+```
+
+### Running the App
+
+```bash
+npm run dev
+```
+
+### Building for Production
+
+```bash
+npm run build
+```
