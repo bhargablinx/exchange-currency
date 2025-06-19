@@ -3,7 +3,6 @@ const useCurrency = async (currency) => {
     let response = await fetch(URL);
     response = await response.json();
     response = response[currency];
-    console.log(response);
     return response;
 };
 
